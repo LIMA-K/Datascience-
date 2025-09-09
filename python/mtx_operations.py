@@ -1,0 +1,16 @@
+import numpy as np
+m1 = np.matrix([[1, 2, 5], [3, 4, 8],[4,2,6]])   # Shape: (2, 3)
+m2 = np.matrix([[2, 3,1], [4, 7,9], [2,2,1]])
+print("matrix1:\n",m1)
+print("matrix2:\n",m2)
+print()
+m_add=np.add(m1,m2)
+print("Sum:\n",m_add)
+m_sub=np.subtract(m1,m2)
+print("Difference:\n",m_sub)
+m_multi=np.matmul(m1,m2)
+print("Product:\n",m_multi)
+m_scalar=2*m1
+print("scalar multiplication of matrix1 with 2:\n",m_scalar)
+m_transpose=np.transpose(m1)
+print("transpose of matrix1:\n",m_transpose)

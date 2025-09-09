@@ -1,0 +1,10 @@
+f1 = open("f1.txt", "r")
+f2 = open("f2.txt", "w")
+a = f1.readlines()
+for i in a:
+    f2.writelines(i)
+f2.close()
+f1.close()
+f2 = open("f2.txt","r")
+print("second file:\n" + f2.read())
+f2.close()
